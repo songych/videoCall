@@ -1,0 +1,68 @@
+<!--
+ * @Description: file content
+ * @Autor: zdJOJO
+ * @Date: 2020-08-30 16:32:06
+ * @LastEditors: zdJOJO
+ * @LastEditTime: 2020-08-31 16:04:01
+ * @FilePath: \solarSystem-react\index.html
+-->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+  <link rel="icon" href="./assets/favicon.ico">
+  <link type="te" href="./assets/favicon.ico">
+  <title> <%= htmlWebpackPlugin.options.title %></title>
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+  </script>
+  <script>
+    if ('addEventListener' in document) {
+      window.addEventListener('load', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  </script>
+  <style>
+    .ant-form-item{
+      margin-bottom: 0!important;
+    }
+    .ant-form-item-explain{
+      position: absolute;
+    }
+    #login .ant-form-item{
+      margin-bottom: 30px!important;
+    }
+    .ant-table-tbody > tr:hover >td{
+      background-color: #eeeeee!important;
+    }
+    .ant-table-tbody > tr:hover {
+      cursor: pointer!important;
+    }
+    .ant-table-tbody .emphasis{
+      background-color: #e8c4a9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- <script src="https://as.alipayobjects.com/g/component/??react/15.3.2/react.min.js,react/15.3.2/react-dom.min.js"></script>  -->
+  <script type="text/javascript" src="<%=htmlWebpackPlugin.options.injectJs%>"></script>
+  <!-- <script type=text/javascript src="<%= htmlWebpackPlugin.options.bundleName %>"></script> -->
+  <script type="text/javascript" src="http://gosspublic.alicdn.com/aliyun-oss-sdk-6.1.1.min.js"></script>
+</body>
+
+</html>
